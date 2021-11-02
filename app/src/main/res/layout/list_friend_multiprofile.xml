@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/platform_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/netfilx_logo" />
+
+    <TextView
+        android:id="@+id/party_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:text="("
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/user_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/personnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="/3)"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/request"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/gual_pink"
+        android:text="요청"
+        android:textColor="@color/white"></Button>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/payment"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/gual_green"
+        android:text="결제대기"
+        android:textColor="@color/black"
+        android:visibility="gone"></androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>

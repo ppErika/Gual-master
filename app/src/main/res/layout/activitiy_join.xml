@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gual_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="이름"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:layout_weight="0.7"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="이메일"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:layout_weight="0.7"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:text="닉네임"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:inputType="textUri"
+            android:textColor="@color/white"
+            android:textSize="15dp"></EditText>
+
+        <Button
+            android:id="@+id/nickname_btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="20dp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/gual_pink"
+            android:text="중복확인"
+            android:textColor="@color/white"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="친구목록 허용"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <Switch
+            android:id="@+id/address_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="0.7"
+            android:switchMinWidth="60dp"></Switch>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="결제일 전 알림"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <Switch
+            android:id="@+id/alert_before"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="0.7"
+            android:switchMinWidth="60dp"></Switch>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9">
+
+        <Button
+            android:id="@+id/gual_btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginVertical="50dp"
+            android:backgroundTint="@color/gual_pink"
+            android:text="구알 시작하기"
+            android:textColor="@color/white">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

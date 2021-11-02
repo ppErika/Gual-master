@@ -1,0 +1,6 @@
+/build
+
+#통신관련 
+KakaoApplication.kt
+RetrofitClient.kt
+PayRetrofitService.kt 

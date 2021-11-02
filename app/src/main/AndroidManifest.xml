@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sample.gual">
+
+    <!-- 인터넷 사용 권한 설정-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/gual_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/gual_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar"
+        android:name=".KakaoApplication"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".AddressmainActivity"/>
+        <activity android:name=".MakemultiprofileActivity"/>
+        <activity android:name=".CalendarActivity"/>
+        <activity android:name=".MatchingActivity"/>
+        <activity android:name=".SettingActivity"/>
+        <activity android:name=".AddSubscribeActivity"/>
+        <activity android:name=".AgreeDisagreeActivity"/>
+        <activity android:name=".FriendMultiprofileRequestActivity"/>
+        <activity android:name=".EditMultiprofileActivity"/>
+        <activity android:name=".EditPartyActivity"/>
+        <activity android:name=".EditUserActivity"/>
+        <activity android:name=".AgreeActivity"/>
+        <activity android:name=".DisagreeActivity"/>
+        <activity android:name=".MatchingTimeActivity"/>
+        <activity android:name=".MatchingSuccessActivity"/>
+        <activity android:name=".PaymentActivity"/>
+        <activity android:name=".SubscribeInfoActivity"/>
+        <activity android:name=".EditMyPlatformActivity"/>
+        <activity android:name=".PlatformInfoActivity" android:theme="@style/Transparent"/>
+        <activity android:name=".KakaoPayActivity"/>
+        <activity android:name=".MatchingProgressActivity"/>
+        <activity android:name=".MatchingFailActivity"/>
+        <activity android:name=".MatchingCancelActivity"/>
+        <activity android:name=".MyPartyDeleteProgressActivity"/>
+        <activity android:name=".DeleteUserActivity"/>
+        <activity android:name=".PartyUserDeleteActivity"/>
+        <activity android:name=".NotiReceieveActivity"/>
+
+        <!-- 팝업 Activity -->
+        <activity android:name=".PopupActivity" android:theme="@android:style/Theme.Dialog" />
+
+        <!-- Redirect URI 설정하기 -->
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth" -->
+                <data android:host="oauth"
+                    android:scheme="kakao1c7f38ab5c70002127addff2544b6017" />
+            </intent-filter>
+        </activity>
+    </application>
+
+<!--    <meta-data-->
+<!--        android:name="com.kakao.sdk.AppKey"-->
+<!--        android:value="1c7f38ab5c70002127addff2544b6017" /> &lt;!&ndash; 네이티브 앱 키 설정 &ndash;&gt;-->
+
+</manifest>

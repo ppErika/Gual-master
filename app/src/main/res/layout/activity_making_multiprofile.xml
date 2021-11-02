@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gual_background"
+    android:orientation="vertical"
+    tools:context=".MakemultiprofileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="카테고리"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="계정ID"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/account_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="5"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:inputType="textUri"
+            android:textColor="@color/white"
+            android:textSize="15dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="계정PW"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/account_pw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="5"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:inputType="textUri"
+            android:textColor="@color/white"
+            android:textSize="15dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="결제일"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="매달"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/payment_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="일"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2.5"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="모집된 인원"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/personnel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3.5"
+            android:backgroundTint="@color/white"
+            android:prompt="@array/countpeople_array" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="명"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friend_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="친구1"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/friend_id1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="5"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friend_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="친구2"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/friend_id2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="5"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friend_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="친구3"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/friend_id3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="5"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="자동매칭 허용"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <Switch
+            android:id="@+id/allow_auto_matching"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:switchMinWidth="60dp">>
+
+        </Switch>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="계좌번호"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/bank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:backgroundTint="@color/white" />
+
+        <EditText
+            android:id="@+id/bank_account_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:backgroundTint="@color/white"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9">
+
+        <Button
+            android:id="@+id/create_profile"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginVertical="50dp"
+            android:backgroundTint="@color/gual_pink"
+            android:text="프로필 생성하기"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
