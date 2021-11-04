@@ -50,7 +50,7 @@ v2. 2021-12-01 _(예정)_ ~
 
 ## 구현 화면
 ![gual_screen](https://user-images.githubusercontent.com/40011759/138392437-0ab9592e-eb22-4104-99ac-8019450e81f1.png)  
-<br>https://youtu.be/LBu1Gpw9tGs
+<br>발표 영상: https://youtu.be/LBu1Gpw9tGs
 <br>시연: 02:31 ~
 
 ------------
